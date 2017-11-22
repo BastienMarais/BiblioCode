@@ -1,1 +1,1 @@
-# Ce répertoire contient les fichiers .php
+# Ce répertoire contient les fichiers .html
