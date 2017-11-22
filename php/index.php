@@ -98,24 +98,24 @@
 			<content class="container">
 				<!-- Description -->
 				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h1> Partie WEB </h1>
 						<p> 
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor mollis egestas. Mauris eu ligula eget augue molestie molestie. Donec tempus magna dolor. Maecenas vestibulum pellentesque enim nec iaculis. Praesent sit amet justo eros. Sed enim urna, semper non scelerisque cursus, vulputate nec felis. Maecenas ac orci sed metus euismod ullamcorper. Maecenas dolor nunc, lobortis at tortor quis, semper euismod sem. Sed nec rutrum libero. Nulla dignissim neque nec maximus consequat. 
 						</P>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					</article>
+					<article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h1> Partie ALGO </h1>
 						<p> 
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor mollis egestas. Mauris eu ligula eget augue molestie molestie. Donec tempus magna dolor. Maecenas vestibulum pellentesque enim nec iaculis. Praesent sit amet justo eros. Sed enim urna, semper non scelerisque cursus, vulputate nec felis. Maecenas ac orci sed metus euismod ullamcorper. Maecenas dolor nunc, lobortis at tortor quis, semper euismod sem. Sed nec rutrum libero. Nulla dignissim neque nec maximus consequat. 
 						</P>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					</article>
+					<article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h1> Partie BD </h1>
 						<p> 
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor mollis egestas. Mauris eu ligula eget augue molestie molestie. Donec tempus magna dolor. Maecenas vestibulum pellentesque enim nec iaculis. Praesent sit amet justo eros. Sed enim urna, semper non scelerisque cursus, vulputate nec felis. Maecenas ac orci sed metus euismod ullamcorper. Maecenas dolor nunc, lobortis at tortor quis, semper euismod sem. Sed nec rutrum libero. Nulla dignissim neque nec maximus consequat. 
 						</P>
-					</div>
+					</article>
 				</div>
 				<br/>
 				<br/>
@@ -127,7 +127,7 @@
 							echo "
 								Vous êtes sur l'$name et il est : 
 								<div id='div_horloge'></div>
-								<a href=#haut> Retourner en haut </a>
+								<a href='#haut'> Retourner en haut </a>
 							";
 						?>
 					</div>
