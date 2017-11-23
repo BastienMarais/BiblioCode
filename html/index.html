@@ -10,10 +10,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script src="../js/timer.js" type="text/javascript"></script>
 		<link rel="stylesheet" href="../css/style.css">
-		<?php
-			$name = 'Accueil';
-			echo "<title> $name </title>";
-		?>
+		<title> Accueil </title>
 	</head>
 	<body class="generic-background">
 		<a id="haut"></a>
@@ -123,13 +120,9 @@
 				<!-- Pied de page -->
 				<footer class="footer text-center grey-background row">
 					<div>
-						<?php
-							echo "
-								Vous êtes sur l'$name et il est : 
-								<div id='div_horloge'></div>
-								<a href='#haut'> Retourner en haut </a>
-							";
-						?>
+						<div>Vous êtes sur l'Accueil et il est :</div>
+						<div id='div_horloge'></div>
+						<a href='#haut'> Retourner en haut </a>
 					</div>
 				</footer>
 			</content>
