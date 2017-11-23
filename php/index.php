@@ -61,7 +61,7 @@
 									<li><a href="#">Index</a></li>
 							   </ul>
 							</li>
-					   </ul>
+						</ul>
 					</li>
 					<!-- Menu BD -->
 					<li class="dropdown">
@@ -72,7 +72,7 @@
 						<ul class="dropdown-menu">
 							<li><a href="#">MySQL</a></li>
 							<li><a href="#">MongoDB</a></li>
-					   </ul>
+						</ul>
 					</li>
 				</ul>
 				<!-- Barre de recherche -->
