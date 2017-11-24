@@ -3,27 +3,36 @@
 	width: 100px;
 }
 
-.span-green{
-	color : green ;
-}
-.span-red{
-	color : red ;
-}
-
 .jumbotron {
   color: #AAA; 
   background-color: #313131;
 }
 
-.generic-background{
+/* Color */
+.color-green{
+	color : green ;
+}
+.color-red{
+	color : red ;
+}
+.color-blue{
+	color : blue;
+}
+.color-white{
+	color : #FFFFFF;
+}
+
+/* Background color */
+.background-grey{
 	background-color: #BABABA;
 }
 
-.grey-background{
+.background-grey-text-white{
 	background-color: #313131;
 	color : white;
 }
 
+/* Position */
 .text-center{
 	text-align : center;
 }
@@ -33,3 +42,4 @@
     bottom: 0;
 	width : 100%;
 }
+
