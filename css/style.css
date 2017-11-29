@@ -32,6 +32,10 @@
 	color : white;
 }
 
+.background-black-text-white{
+	background-color: #000000;
+	color : white;
+}
 /* Position */
 .text-center{
 	text-align : center;
@@ -43,3 +47,29 @@
 	width : 100%;
 }
 
+/* Title */
+.titre-article{
+	border : solid 2px black;
+	background-color: #BABABA;
+	color : black;
+}
+/* Rendu */
+.rendu{
+	border : solid 2px black;
+	background-color : white;
+	color : black;
+}
+.legend-rendu{
+	border : solid 2px black;
+	background-color : black;
+	color : white;
+}
+
+.legend-code{
+	border : solid 2px black;
+	color : white;
+}
+
+.border{
+	border : solid 2px black;
+}
