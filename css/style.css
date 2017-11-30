@@ -73,3 +73,7 @@
 .border{
 	border : solid 2px black;
 }
+
+.border-white{
+	border : solid 2px white;
+}
