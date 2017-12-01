@@ -103,13 +103,223 @@
 			<!-- Corps de la page -->
 			<content class="container">
 				
+				<!-- Article 1 -->
+				<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><br/></div>
+				<article class="container col-xs-12 col-sm-12 col-md-10 col-lg-10 background-grey-text-white border">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h1 class="titre-article"> Tri par insertions : </h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Pseudo code :</h2>
+							<pre><code>Fonction TriInsertion(tableau T) :
+// T[0] est la sentinelle /!\
+// Variables locales : 
+// i,j des entiers ;
+// X un élément de T ;	
+	
+	Pour i de 2 à N faire :
+		j = i - 1 ;
+		X = T[i] ;
+		Tant que T[i] &gt; X faire :
+			T[j + 1] = T[j] ;
+			j = j - 1 ;
+		Fin tant que ;
+		T[j + 1] = X ;
+	Retourner T ;
+
+Fin TriInsertion ;</code></pre>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Exemple python :</h2>
+							<pre><code class="python">def triParInsertion(tab):
+	j = 0
+	x = 0
+	tab.insert(0,min(tab)-1)
+	for i in range(2,len(tab)):
+		j = i - 1 
+		x = tab[i]
+		while tab[j] &gt; x :
+			tab[j+1] = tab[j]
+			j = j - 1
+		tab[j+1] = x
+	tab.remove(min(tab))
+	return tab</code></pre>
+						</div>
+					</div>
+					<div class="row">
+						
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h2>Explications :</h2>
+							<p>
+								Blabla
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+					</div>
+				</article>
+				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+				
+				<!-- Article 2 -->
+				<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><br/></div>
+				<article class="container col-xs-12 col-sm-12 col-md-10 col-lg-10 background-grey-text-white border">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h1 class="titre-article"> Tri Rapide : </h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Pseudo code :</h2>
+							<pre><code>Fonction TriRapide(tableau T, entier gauche, entier droite) :
+// Utilise : Placer, TriRapide ;
+// Variables locales : 
+// k un entier ;
+
+	Si gauche &lt; droite alors :
+		T,k = Placer(T,gauche,droite) ;
+		T = TriRapide(T,gauche,k - 1) ;
+		T = TriRapide(T,k + 1,droite) ;
+		Retourner T ;
+	Fin si ;
+	
+Fin TriRapide ;
+
+Fonction Placer(tableau T, entier gauche, entier droite) :
+// Utilise Echanger ;
+// Variables locales :
+// bas, haut et k trois entiers ;
+
+	bas = gauche + 1 ;
+	haut = droite ;
+	Tant que bas &lt;= haut faire :
+		Tant que T[bas] &lt;= T[gauche] faire :
+			bas = bas +1 ;
+		Fin tant que ;
+		Tant que T[haut] &gt; T[gauche] faire :
+			haut = haut - 1 ;
+		Fin tant que ;
+		Si bas &lt; haut alors :
+			Echanger(T[bas], T[haut]);
+			bas = bas + 1 ;
+			haut = haut - 1 ;
+		Fin si ;
+	Fin tant que ;
+	
+	Echanger(T[gauche], T[haut]) ;
+	k = haut ;
+	Retourner T,k ;
+	
+Fin Placer ;
+
+Fonction Echanger(a, b) :
+	Retourner b, a ;
+Fin Echanger ;</code></pre>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Exemple python :</h2>
+							<pre><code class="python">def echanger(a,b) :
+	return b,a
+
+def placer(tab,gauche,droite) :
+	bas = gauche + 1
+	haut = droite
+	tab.append(int(max(tab)+1)) ## sentinelle
+	while bas &lt;= haut :
+		while tab[bas] &lt;= tab[gauche] :
+			bas = bas + 1
+		while tab[haut] &gt; tab[gauche] :
+			haut = haut - 1
+		if bas &lt; haut :
+			tab[bas],tab[haut] = echanger(tab[bas],tab[haut])
+			bas = bas + 1
+			haut = haut - 1 
+	tab[gauche],tab[haut] = echanger(tab[gauche],tab[haut])
+	k = haut
+	tab.remove(max(tab))
+	return tab,k
+
+
+def triRapide(tab,gauche,droite) :
+	if gauche &lt; droite:
+		tab,k = placer(tab,gauche,droite)
+		print tab
+		tab = triRapide(tab,gauche,k-1)
+		print tab
+		tab = triRapide(tab,k+1,droite)
+	return tab</code></pre>
+						</div>
+					</div>
+					<div class="row">
+						
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h2>Explications :</h2>
+							<p>
+								Blabla
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+					</div>
+				</article>
 				
 				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+				
+				<!-- Article 3 -->
+				<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><br/></div>
+				<article class="container col-xs-12 col-sm-12 col-md-10 col-lg-10 background-grey-text-white border">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h1 class="titre-article"> Tri Fusion : </h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Pseudo code :</h2>
+							<pre><code class="python">TODO</code></pre>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2 class="text-center">Exemple python :</h2>
+							<pre><code class="python">TODO</code></pre>
+						</div>
+					</div>
+					<div class="row">
+						
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h2>Explications :</h2>
+							<p>
+								TODO
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+					</div>
+				</article>
+				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 				
 				<!-- Pied de page -->
+				<div class="row"> <br/>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+					</div>
+				</div>
 				<footer class="footer text-center background-grey-text-white row">
 					<div>
-						<div>Vous êtes sur algo-tris et il est :</div>
+						<div>Vous êtes sur web-html et il est :</div>
 						<div id='div_horloge'></div>
 						<a href='#haut'> Retourner en haut </a>
 					</div>
