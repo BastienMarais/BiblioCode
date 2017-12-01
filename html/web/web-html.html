@@ -6,7 +6,7 @@
 		<meta name="keywords" content="HTML,CSS,JavaScript">
 		<meta name="author" content="Bastien Marais">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+
 		<!-- Déclatration des styles css et scripts js -->
 		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,6 +15,9 @@
 		<script src="../../js/timer.js" type="text/javascript"></script>
 		<link rel="stylesheet" href="../../css/style.css">
 		<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
 		<title> WEB-HTML </title>
 	</head>
 	<body class="background-grey">
@@ -87,8 +90,8 @@
 		<br/>
 		<br/>
 		<div class="container-fluid">
-		
-		
+
+
 			<!-- Zone de titre -->
 			<div class="jumbotron">
 				<div class="container">
@@ -96,13 +99,13 @@
 				</div>
 			</div>
 			<br/>
-			
-			
-			
+
+
+
 			<!-- Corps de la page -->
 			<content class="container">
-		
-		
+
+
 				<!-- Article 1 -->
 				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
 					<div class="row">
@@ -111,10 +114,9 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Code :</h2>
-							<pre class="background-black-text-white">
-&lt;!doctype html&gt; 
+							<pre><code>&lt;!doctype html&gt;
 &lt;html lang="fr"&gt;
 	&lt;head&gt;
 		&lt;meta charset="utf-8"&gt;
@@ -123,13 +125,13 @@
 	&lt;body&gt;
 		Content...
 	&lt;/body&gt;
-&lt;/html&gt;</pre>
+&lt;/html&gt;</code></pre>
 						</div>
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">	
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Description :</h2>
 							<p>
-								Tout document HTML doit contenir cette structure afin de respecter les 
-								normes W3C. Pour savoir si votre code est en adéquation avec les normes 
+								Tout document HTML doit contenir cette structure afin de respecter les
+								normes W3C. Pour savoir si votre code est en adéquation avec les normes
 								W3C vous pouvez aller sur <a href="https://validator.w3.org/" target="blank">ce site</a>.
 								Un autre site utile est <a href="http://jsbeautifier.org/" target="blank">jsbeautifier</a>,
 								il permet d'uniformiser votre mise en forme sans faire d'erreurs.
@@ -140,17 +142,17 @@
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 					</div>
 				</article>
-					
-					
-					
-					
-					
+
+
+
+
+
 				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"><br/></div>
-					
-					
-					
-					
-				<!-- Article 2 -->	
+
+
+
+
+				<!-- Article 2 -->
 				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -158,17 +160,16 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2> Code :</h2>
-							<pre class="background-black-text-white">
-&lt;h1&gt; Mon très grand titre &lt;/h1&gt;
+							<pre><code>&lt;h1&gt; Mon très grand titre &lt;/h1&gt;
 &lt;h2&gt; Mon grand titre &lt;/h2&gt;
 &lt;h3&gt; Mon titre moyen/grand &lt;/h3&gt;
 &lt;h4&gt; Mon titre moyen &lt;/h4&gt;
 &lt;h5&gt; Mon petit titre &lt;/h5&gt;
-&lt;h6&gt; Mon très petit titre &lt;/h6&gt;</pre>
+&lt;h6&gt; Mon très petit titre &lt;/h6&gt;</code></pre>
 						</div>
-						
+
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Résultat :</h2>
 							<div class="rendu">
@@ -185,9 +186,9 @@
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 					</div>
 				</article>
-				
+
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
-				
+
 				<!-- Article 3 -->
 				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
 					<div class="row">
@@ -196,15 +197,14 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2> Code :</h2>
-							<pre class="background-black-text-white">
-&lt;p&gt; Je suis un paragraphe &lt;/p&gt;
+							<pre><code>&lt;p&gt; Je suis un paragraphe &lt;/p&gt;
 &lt;i&gt; Je suis en italique &lt;/i&gt;
 &lt;b&gt; Je suis en gras &lt;/b&gt;
 &lt;u&gt; Je suis souligné &lt;/u&gt;
 &lt;q&gt; Je suis une citation &lt;/q&gt;
-&lt;del&gt; Je suis barré &lt;/del&gt;</pre>
+&lt;del&gt; Je suis barré &lt;/del&gt;</code></pre>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Résultat :</h2>
@@ -222,12 +222,12 @@
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 					</div>
 				</article>
-						
-					
+
+
 				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"><br/></div>
-						
-					
-				<!-- Article 4 -->	
+
+
+				<!-- Article 4 -->
 				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -235,12 +235,11 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2> Code :</h2>
-							<pre class="background-black-text-white">
-&lt;div&gt; ou &lt;header&gt; ou &lt;footer&gt;
+							<pre><code>&lt;div&gt; ou &lt;header&gt; ou &lt;footer&gt;
 	Content...
-&lt;/div&gt; ou &lt;/header&gt; ou &lt;/footer&gt; 
+&lt;/div&gt; ou &lt;/header&gt; ou &lt;/footer&gt;
 
 ou &lt;article&gt; ou &lt;content&gt;
 	Content...
@@ -251,20 +250,20 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 	&lt;span&gt;
 		texte_modifié
 	&lt;/span&gt;
-&lt;/p&gt;</pre>
+&lt;/p&gt;</code></pre>
 						</div>
-						
+
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Description :</h2>
 							<p>
-								Les balises "header", "footer", "content" et "article" sont des balises 
-								équivalentes a une balise "div", elles ont été ajouté dans le HTML 5 pour 
-								être un peu plus précise dans leur contenu mais ça reste des "div".
+								Les balises &lt;header&gt;, &lt;footer&gt;, &lt;content&gt; et &lt;article&gt; sont des balises
+								équivalentes a une balise &lt;div&gt;, elles ont été ajouté dans le HTML 5 pour
+								être un peu plus précise dans leur contenu mais ça reste des &lt;div&gt;.
 								Ces balises permettent de regrouper votre code en compartiment c'est pratique
 								pour associer un style a une partie de votre code. Par exemple sur ce site
-								chaque "article" a un fond gris foncé.
+								chaque &lt;article&gt; a un fond gris foncé.
 								<br/><br/>
-								Les balises "span" quand a elles servent souvent a modifier quelques parties d'un
+								Les balises &lt;span&gt; quand a elles servent souvent a modifier quelques parties d'un
 								paragraphe quand elles sont associées a un style css.
 							</p>
 						</div>
@@ -273,10 +272,10 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 					</div>
 				</article>
-				
+
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
-				
-				<!-- Article 5 -->	
+
+				<!-- Article 5 -->
 				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -284,16 +283,15 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2> Code :</h2>
-							<pre class="background-black-text-white">
-&lt;ul&gt;
+							<pre><code>&lt;ul&gt;
 	&lt;li&gt; Premier élément &lt;/li&gt;
 	&lt;li&gt; Deuxième élément &lt;/li&gt;
 	&lt;li&gt; Troisième élément &lt;/li&gt;
-&lt;/ul&gt;</pre>
+&lt;/ul&gt;</code></pre>
 						</div>
-						
+
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Résultat :</h2>
 							<div class="rendu">
@@ -309,10 +307,10 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 					</div>
 				</article>
-				
+
 				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"><br/></div>
-				
-				<!-- Article 6 -->	
+
+				<!-- Article 6 -->
 				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -320,16 +318,15 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2> Code :</h2>
-							<pre class="background-black-text-white">
-&lt;ol&gt;
+							<pre><code>&lt;ol&gt;
 	&lt;li&gt; Premier élément &lt;/li&gt;
 	&lt;li&gt; Deuxième élément &lt;/li&gt;
 	&lt;li&gt; Troisième élément &lt;/li&gt;
-&lt;/ol&gt;</pre>
+&lt;/ol&gt;</code></pre>
 						</div>
-						
+
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Résultat :</h2>
 							<div class="rendu">
@@ -345,10 +342,10 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 					</div>
 				</article>
-				
+
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
-				
-				<!-- Article 7 -->	
+
+				<!-- Article 7 -->
 				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -356,29 +353,28 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2> Code :</h2>
-							<pre class="background-black-text-white">
-&lt;a href="cible_du_lien"&gt; 
+							<pre><code>&lt;a href="cible_du_lien"&gt;
 	Texte surligné et bleu qui sera le lien
 &lt;/a&gt;
 
-&lt;a href="cible_du_lien" target="blank"&gt; 
+&lt;a href="cible_du_lien" target="blank"&gt;
 	Texte...
 &lt;/a&gt;
 
 &lt;a id="id_ancre"&gt; &lt;/a&gt;
-&lt;a href="#id_ancre"&gt; Aller vers id_ancre &lt;/a&gt;</pre>
+&lt;a href="#id_ancre"&gt; Aller vers id_ancre &lt;/a&gt;</code></pre>
 						</div>
-						
+
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Description :</h2>
 							<p>
-								Pour utiliser un lien il faut passer par la balise "a", on indique
+								Pour utiliser un lien il faut passer par la balise &lt;a&gt;, on indique
 								ensuite vers quoi pointe ce lien (un id sur la page,une autre page html ou
 								un http://... ) avec href.
 								<br/>
-								Vous pouvez ajouter target="blank" dans la balise afin 
+								Vous pouvez ajouter target="blank" dans la balise afin
 								que ce lien s'ouvre dans un autre onglet plutot que de remplacer la page
 								actuelle (option par défaut).
 							</p>
@@ -388,10 +384,10 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 					</div>
 				</article>
-				
+
 				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"><br/></div>
-				
-				<!-- Article 8 -->	
+
+				<!-- Article 8 -->
 				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -399,30 +395,29 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2> Code :</h2>
-							<pre class="background-black-text-white">
-&lt;img src="../images/mon_image.png"
+							<pre><code>&lt;img src="../images/mon_image.png"
 	width="largeur_dimension"
 	height="hauteur_dimension"
 	alt="description_photo_malvoyant" /&gt;
 
 &lt;head&gt;
-	&lt;link rel="shortcut icon" 
+	&lt;link rel="shortcut icon"
 		href="../images/favicon.ico"
 		type="image/x-icon"&gt;
-&lt;/head&gt;</pre>
+&lt;/head&gt;</code></pre>
 						</div>
-						
+
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Description :</h2>
 							<p>
-								Pour insérer une image il suffit d'indiquer dans la balise "img" le chemin d'accès jusqu'a
+								Pour insérer une image il suffit d'indiquer dans la balise &lt;img&gt; le chemin d'accès jusqu'a
 								cette image (src), des dimensions si vous le souhaitez (height et width) et
 								pour les normes W3C une description (alt).
 								<br/><br/>
 								Ensuite un favicon est l'image qu'on peut apercevoir a coté du nom de l'onglet.
-								Il faut absolument que ce soit un .ico, vous pouvez utiliser 
+								Il faut absolument que ce soit un .ico, vous pouvez utiliser
 								<a href="https://www.favicon-generator.org/" target="blank">ce site</a> pour
 								convertir vos images en .ico .
 							</p>
@@ -432,10 +427,10 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 					</div>
 				</article>
-				
+
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
-				
-				<!-- Article 9 -->	
+
+				<!-- Article 9 -->
 				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -443,32 +438,31 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2> Code :</h2>
-							<pre class="background-black-text-white">
-&lt;video controls autoplay loop &gt;
+							<pre><code>&lt;video controls autoplay loop &gt;
 	&lt;source src="../vidéo/video.webm" type="video/webm"&gt;
 	&lt;source src="../vidéo/video.mp4" type="video/mp4"&gt;
 	&lt;source src="../vidéo/video.ogv" type="video/ogg"&gt;
 	Votre navigateur ne permet pas de lire les vidéos HTML5.
-&lt;/video&gt;</pre>
+&lt;/video&gt;</code></pre>
 						</div>
-						
+
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Description :</h2>
 							<p>
 								Cette balise vous permet d'intégrer des vidéos dans votre page
-								HTML. La balise "video" peut contenir l'attribut "controls" ajoutant
+								HTML. La balise &lt;video&gt; peut contenir l'attribut "controls" ajoutant
 								les boutons de base pour une vidéo, l'attribut "autoplay" pour déclencher
 								le lancement automatique de la vidéo et l'attribut "width" pour définir la
-								taille. Il y a également "loop" pour une 
+								taille. Il y a également "loop" pour une
 								lecture en boucle.
 								<br/><br/>
-								La balise "source" quand a elle contient le chemin d'accès vers la vidéo et
+								La balise &lt;source&gt; quand a elle contient le chemin d'accès vers la vidéo et
 								son type.
-								Mettre plusieurs "source" permet en cas de problème de format d'en avoir
+								Mettre plusieurs &lt;source&gt; permet en cas de problème de format d'en avoir
 								un compris par le navigateur.
-								
+
 							</p>
 						</div>
 					</div>
@@ -476,10 +470,10 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 					</div>
 				</article>
-				
+
 				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"><br/></div>
-				
-				<!-- Article 10 -->	
+
+				<!-- Article 10 -->
 				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -487,28 +481,27 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2> Code :</h2>
-							<pre class="background-black-text-white">
-&lt;audio controls autoplay loop&gt;
-	&lt;source src="../music/music.ogg" type="audio/ogg" &gt;   
+							<pre><code>&lt;audio controls autoplay loop&gt;
+	&lt;source src="../music/music.ogg" type="audio/ogg" &gt;
 	&lt;source src="../music/music.mp3" type="audio/mpeg" &gt;
-&lt;/audio&gt;</pre>
+&lt;/audio&gt;</code></pre>
 						</div>
-						
+
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Description :</h2>
 							<p>
-								La balise "audio" permet d'ajouter du son a votre page ou juste un
-								document audio. La balise peut contenir l'attribut "controls" pour 
+								La balise &lt;audio&gt; permet d'ajouter du son a votre page ou juste un
+								document audio. La balise peut contenir l'attribut "controls" pour
 								donner le choix a l'utilisateur de l'écouter ou non et aussi l'attribut
-								"autoplay" pour un lancement automatique. Il y a également "loop" pour une 
-								lecture en boucle. Par exemple avec seulement autoplay et loop on obtient une 
-								page avec une music d'ambiance.
+								"autoplay" pour un lancement automatique. Il y a également "loop" pour une
+								lecture en boucle. Par exemple avec seulement autoplay et loop on obtient une
+								page avec une musique d'ambiance.
 								<br/> <br/>
-								La balise "source" quand a elle contient le chemin d'accès vers le document audio et
+								La balise &lt;source&gt; quand a elle contient le chemin d'accès vers le document audio et
 								son type.
-								Mettre plusieurs "source" permet en cas de problème de format d'en avoir
+								Mettre plusieurs &lt;source&gt; permet en cas de problème de format d'en avoir
 								un compris par le navigateur.
 							</p>
 						</div>
@@ -517,38 +510,37 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 					</div>
 				</article>
-				
+
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
-				
-				
-				<!-- Article 11-->	
+
+
+				<!-- Article 11-->
 				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<h1 class="titre-article"> Fieldset, legend et code non interprété : </h1>
+							<h1 class="titre-article"> Fieldset et legend </h1>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2> Code :</h2>
-							<pre class="background-black-text-white">
-Créer un encadrer :
+							<pre><code>Créer un encadrer :
 &lt;fieldset&gt; Contenu du cadre &lt;/fieldset&gt;
 
 Ecrire sur l'encadrer :
-&lt;fieldset&gt; 
+&lt;fieldset&gt;
 	&lt;legend&gt; Texte a afficher sur le cadre  &lt;/legend&gt;
 	Contenu du cadre
-&lt;/fieldset&gt;</pre>
+&lt;/fieldset&gt;</code></pre>
 						</div>
-						
+
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Description :</h2>
 							<p>
-								La balise "fieldset" permet d'ajouter un cadre autour de tout ce qui est
+								La balise &lt;fieldset&gt; permet d'ajouter un cadre autour de tout ce qui est
 								entre lui et sa balise fermante.
 								<br/> <br/>
-								La balise "legend" quand a elle permet d'ajouter du texte dans le coin haut
+								La balise &lt;legend&gt; quand a elle permet d'ajouter du texte dans le coin haut
 								droit du cadre.
 							</p>
 						</div>
@@ -557,10 +549,10 @@ Ecrire sur l'encadrer :
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 					</div>
 				</article>
-				
+
 				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"><br/></div>
-				
-				<!-- Article 12-->	
+
+				<!-- Article 12-->
 				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -568,10 +560,9 @@ Ecrire sur l'encadrer :
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2> Code :</h2>
-							<pre class="background-black-text-white">
-&lt;img src="../images/map_global.png"
+							<pre><code>&lt;img src="../images/map_global.png"
 usemap="#map" alt="..."/&gt;
 
 &lt;map name="map"&gt;
@@ -579,19 +570,19 @@ usemap="#map" alt="..."/&gt;
 	coords="x,y,rayon"
 	href="cible_lien_1"
 	alt="..."/&gt;
-	
+
 	&lt;area shape="rect"
 	coords="x1,y1,x2,y2"
 	href="cible_lien_2"
 	alt="..."/&gt;
-	
+
 	&lt;area shape="poly"
 	coords="x1,y1,x2,y2,..."
 	href="cible_lien_3"
 	alt="..."/&gt;
-&lt;/map&gt;</pre>
+&lt;/map&gt;</code></pre>
 						</div>
-						
+
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Description :</h2>
 							<p>
@@ -600,12 +591,12 @@ usemap="#map" alt="..."/&gt;
 								on est rediriger vers un une autre page etc...
 								<br/> <br/>
 								Pour l'utiliser il faut rajouter usemap="name_map" dans la balise
-								"img". Ensuite on ouvre une balise "map" avec comme name ce qu'il y a dans
+								&lt;img&gt;. Ensuite on ouvre une balise &lt;map&gt; avec comme name ce qu'il y a dans
 								votre usemap.
 								<br/><br/>
 								Maintenant il faut définir les zones cliquables et pour cela vous avez
 								le choix entre des rectangles, des cercles et des polygones.
-								Pour les définir c'est une balise "area" avec un attribut shape="rect/circle/poly"
+								Pour les définir c'est une balise &lt;area&gt; avec un attribut shape="rect/circle/poly"
 								et un attribut coords="liste des points pour définir la forme choisie".
 							</p>
 						</div>
@@ -614,10 +605,52 @@ usemap="#map" alt="..."/&gt;
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 					</div>
 				</article>
-				
+
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+
+
+				<!-- Article 13 -->
+				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h1 class="titre-article"> Balise code et coloration syntaxique </h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2> Code :</h2>
+							<pre><code>&lt;head&gt;
+	&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css"&gt;
+	&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"&gt;&lt;/script&gt;
+	&lt;script>hljs.initHighlightingOnLoad();&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;pre&gt;&lt;code&gt;
+		Code non interprété...
+	&lt;/code&gt;&lt;/pre&gt;
+&lt;/body&gt;</code></pre>
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Description :</h2>
+							<p>
+								Pour ajouter la coloration syntaxique a vos codes non interprétés vous devez
+								mettre ces lignes la dans la balise &lt;head&gt;
+								<br/><br/>
+								Pour votre insérer du code il vous suffit de mettre les balises
+								&lt;pre&gt;&lt;code&gt;.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+					</div>
+				</article>
+
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 				
-				<!-- Article FORM big -->	
+				
+				<!-- Article FORM big -->
 				<article class="container col-xs-12 col-sm-12 col-md-12 col-lg-12 background-grey-text-white border">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -625,10 +658,9 @@ usemap="#map" alt="..."/&gt;
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2> Code :</h2>
-							<pre class="background-black-text-white">
-Base d'un formulaire :
+							<pre><code>Base d'un formulaire :
 &lt;form action="cible_formulaire" method="POST ou GET"&gt;
 	Insérez ici les éléments vu ci-dessous...
 	&lt;input type="submit" value="texte afficher dans le bouton"/&gt;
@@ -636,10 +668,10 @@ Base d'un formulaire :
 
 Champs de texte :
 &lt;label for="nom_lie_label"&gt; Texte du label &lt;/label&gt;
-&lt;input id="nom_lie_label" type="text" required="required" name="nom_variable"/&gt;        <!-- required = obliger de le remplir -->
+&lt;input id="nom_lie_label" type="text" required="required" name="nom_variable"/&gt;
 
 Zone de texte :
-&lt;label for="id_zone" &gt; Texte du label &lt;/label&gt; 
+&lt;label for="id_zone" &gt; Texte du label &lt;/label&gt;
 &lt;textarea id="id_zone" name="Commentaire"&gt; Texte déjà inscrit dans la zone &lt;/textarea&gt;
 
 Cases a cocher :
@@ -654,37 +686,75 @@ Bouton radio :
 
 Menu défilant :
 &lt;select&gt;
-	&lt;option name="nom_variable" value="valeur 1"&gt; texte a afficher dans le menu &lt;/option&gt;
-	&lt;option name="nom_variable" value="valeur 2"&gt; texte a afficher dans le menu &lt;/option&gt;
-	&lt;option name="nom_variable" value="valeur 3"&gt; texte a afficher dans le menu &lt;/option&gt;
-	&lt;option name="nom_variable" value="valeur 4"&gt; texte a afficher dans le menu &lt;/option&gt;
+	&lt;option name="nom_variable" value="valeur 1"&gt; texte a afficher dans le menu 1 &lt;/option&gt;
+	&lt;option name="nom_variable" value="valeur 2"&gt; texte a afficher dans le menu 2 &lt;/option&gt;
+	&lt;option name="nom_variable" value="valeur 3"&gt; texte a afficher dans le menu 3 &lt;/option&gt;
+	&lt;option name="nom_variable" value="valeur 4"&gt; texte a afficher dans le menu 4 &lt;/option&gt;
 &lt;/select&gt;
-							</pre>
+</code></pre>
 						</div>
-						
+
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Description :</h2>
 							<p>
-								Pour commencer un formulaire est une balise "form" avec comme attributs possibles
+								Pour commencer un formulaire il faut une balise &lt;form&gt; avec comme attributs possibles
 								"action" qui peut être un script a exécuter en cas d'envoi de formulaire et "method"
-								qui a pour valeur soit "GET" soit "POST" (GET = élément du formulaire visible dans l'url
-								tandis que POST non). 
+								qui a pour valeur soit "GET" soit "POST" (GET = éléments du formulaire visible dans l'url
+								tandis que POST non).
 								<br/>
 								Ensuite ce formulaire peut contenir des champs de texte, des zones de texte, des checkbox
 								ou des boutons radio ou encore des menus défilants... C'est comme vous voulez !
 								<br/>
-								Le plus important c'est que le formulaire finisse par un "input" de type="submit" car c'est lui
+								Le plus important c'est que le formulaire finisse par un &lt;input&gt; de type="submit" car c'est lui
 								qui envoi le formulaire.
 								<br/><br/>
-								La balise "label" permet que lorsqu'on clique sur le texte du champs, le champs soit pré-sélectionné
+								La balise &lt;label&gt; permet que lorsqu'on clique sur le texte du champs, le champs soit pré-sélectionné
 								sans qu'on est réellement besoin de cliquer dans le rectangle du champs. Il faut lui indiquer
 								dans l'attribut "for" l'id du champs auquel il est lié.
 								<br/><br/>
 								Vous pouvez rendre avec des champs obligatoire avec l'attribut "required" et vous pouvez aussi
 								pré-sélectionner des boutons radio avec l'attribut "checked".
 								<br/>
-								Il existe d'autres types de bouton mais ceci sont les principaux.
+								Il existe d'autres types de bouton (comme le type="color") mais ceci sont les principaux.
 							</p>
+							<h2>Résultat :</h2>
+							<div class="rendu">
+								<form action="" method="">
+									<div class="border">
+										Champs de texte :<br/>
+										<label for="nom_lie_label"> Texte du label </label>
+										<input id="nom_lie_label" type="text" required="required" name="nom_variable"/>        
+									</div>
+									<div class="border">
+										Zone de texte :<br/>
+										<label for="id_zone" > Texte du label </label><br/>
+										<textarea id="id_zone" name="Commentaire">Texte déjà inscrit dans la zone </textarea>
+									</div>
+									<div class="border">
+										Cases a cocher :<br/>
+										<input type="checkbox" name="nom_variable[]" value="valeur 1" /> texte a afficher a coté de la case 1 <br/>
+										<input type="checkbox" name="nom_variable[]" value="valeur 2" /> texte a afficher a coté de la case 2 <br/>
+										<input type="checkbox" name="nom_variable[]" value="valeur 3" /> texte a afficher a coté de la case 3
+									</div>
+									<div class="border">
+										Bouton radio :<br/>
+										<input type="radio" name="nom_variable" value="valeur 1" checked /> texte a afficher a coté du bouton 1 <br/>
+										<input type="radio" name="nom_variable" value="valeur 2"/>  texte a afficher a coté du bouton 2
+									</div>
+									<div class="border">
+										Menu défilant :<br/>
+										<select>
+											<option name="nom_variable" value="valeur 1"> texte a afficher dans le menu 1 </option>
+											<option name="nom_variable" value="valeur 2"> texte a afficher dans le menu 2 </option>
+											<option name="nom_variable" value="valeur 3"> texte a afficher dans le menu 3 </option>
+											<option name="nom_variable" value="valeur 4"> texte a afficher dans le menu 4 </option>
+										</select>
+									</div>
+									<div class="border">
+										<input type="submit" value="texte afficher dans le bouton"/>
+									</div>
+								</form>
+							</div>
 						</div>
 					</div>
 					<div class="row">
@@ -692,6 +762,11 @@ Menu défilant :
 					</div>
 				</article>
 				
+				
+				
+				
+				
+
 				<!-- Pied de page -->
 				<div class="row"> <br/>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -711,6 +786,6 @@ Menu défilant :
 					</div>
 				</footer>
 			</content>
-		</div>	
+		</div>
 	</body>
 </html>
