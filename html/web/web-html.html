@@ -113,7 +113,6 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
 							<h2>Code :</h2>
-							
 							<pre class="background-black-text-white">
 &lt;!doctype html&gt; 
 &lt;html lang="fr"&gt;
@@ -264,7 +263,7 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 								Ces balises permettent de regrouper votre code en compartiment c'est pratique
 								pour associer un style a une partie de votre code. Par exemple sur ce site
 								chaque "article" a un fond gris foncé.
-								<br/>
+								<br/><br/>
 								Les balises "span" quand a elles servent souvent a modifier quelques parties d'un
 								paragraphe quand elles sont associées a un style css.
 							</p>
@@ -364,14 +363,24 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 	Texte surligné et bleu qui sera le lien
 &lt;/a&gt;
 
+&lt;a href="cible_du_lien" target="blank"&gt; 
+	Texte...
+&lt;/a&gt;
+
 &lt;a id="id_ancre"&gt; &lt;/a&gt;
-&lt;a href="#id_ancre"&gt; &lt;/a&gt;</pre>
+&lt;a href="#id_ancre"&gt; Aller vers id_ancre &lt;/a&gt;</pre>
 						</div>
 						
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Description :</h2>
 							<p>
-								TODO
+								Pour utiliser un lien il faut passer par la balise "a", on indique
+								ensuite vers quoi pointe ce lien (un id sur la page,une autre page html ou
+								un http://... ) avec href.
+								<br/>
+								Vous pouvez ajouter target="blank" dans la balise afin 
+								que ce lien s'ouvre dans un autre onglet plutot que de remplacer la page
+								actuelle (option par défaut).
 							</p>
 						</div>
 					</div>
@@ -399,7 +408,9 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 	alt="description_photo_malvoyant" /&gt;
 
 &lt;head&gt;
-	&lt;link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"&gt;
+	&lt;link rel="shortcut icon" 
+		href="../images/favicon.ico"
+		type="image/x-icon"&gt;
 &lt;/head&gt;</pre>
 						</div>
 						
@@ -409,10 +420,11 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 								Pour insérer une image il suffit d'indiquer dans la balise "img" le chemin d'accès jusqu'a
 								cette image (src), des dimensions si vous le souhaitez (height et width) et
 								pour les normes W3C une description (alt).
-								<br/>
+								<br/><br/>
 								Ensuite un favicon est l'image qu'on peut apercevoir a coté du nom de l'onglet.
 								Il faut absolument que ce soit un .ico, vous pouvez utiliser 
-								<a href="https://www.favicon-generator.org/">ce site.</a>
+								<a href="https://www.favicon-generator.org/" target="blank">ce site</a> pour
+								convertir vos images en .ico .
 							</p>
 						</div>
 					</div>
@@ -421,6 +433,264 @@ ou &lt;/article&gt; ou &lt;/content&gt;
 					</div>
 				</article>
 				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+				
+				<!-- Article 9 -->	
+				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h1 class="titre-article"> La balise video : </h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+							<h2> Code :</h2>
+							<pre class="background-black-text-white">
+&lt;video controls autoplay loop &gt;
+	&lt;source src="../vidéo/video.webm" type="video/webm"&gt;
+	&lt;source src="../vidéo/video.mp4" type="video/mp4"&gt;
+	&lt;source src="../vidéo/video.ogv" type="video/ogg"&gt;
+	Votre navigateur ne permet pas de lire les vidéos HTML5.
+&lt;/video&gt;</pre>
+						</div>
+						
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Description :</h2>
+							<p>
+								Cette balise vous permet d'intégrer des vidéos dans votre page
+								HTML. La balise "video" peut contenir l'attribut "controls" ajoutant
+								les boutons de base pour une vidéo, l'attribut "autoplay" pour déclencher
+								le lancement automatique de la vidéo et l'attribut "width" pour définir la
+								taille. Il y a également "loop" pour une 
+								lecture en boucle.
+								<br/><br/>
+								La balise "source" quand a elle contient le chemin d'accès vers la vidéo et
+								son type.
+								Mettre plusieurs "source" permet en cas de problème de format d'en avoir
+								un compris par le navigateur.
+								
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+					</div>
+				</article>
+				
+				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"><br/></div>
+				
+				<!-- Article 10 -->	
+				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h1 class="titre-article"> La balise audio : </h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+							<h2> Code :</h2>
+							<pre class="background-black-text-white">
+&lt;audio controls autoplay loop&gt;
+	&lt;source src="../music/music.ogg" type="audio/ogg" &gt;   
+	&lt;source src="../music/music.mp3" type="audio/mpeg" &gt;
+&lt;/audio&gt;</pre>
+						</div>
+						
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Description :</h2>
+							<p>
+								La balise "audio" permet d'ajouter du son a votre page ou juste un
+								document audio. La balise peut contenir l'attribut "controls" pour 
+								donner le choix a l'utilisateur de l'écouter ou non et aussi l'attribut
+								"autoplay" pour un lancement automatique. Il y a également "loop" pour une 
+								lecture en boucle. Par exemple avec seulement autoplay et loop on obtient une 
+								page avec une music d'ambiance.
+								<br/> <br/>
+								La balise "source" quand a elle contient le chemin d'accès vers le document audio et
+								son type.
+								Mettre plusieurs "source" permet en cas de problème de format d'en avoir
+								un compris par le navigateur.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+					</div>
+				</article>
+				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+				
+				
+				<!-- Article 11-->	
+				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h1 class="titre-article"> Fieldset, legend et code non interprété : </h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+							<h2> Code :</h2>
+							<pre class="background-black-text-white">
+Créer un encadrer :
+&lt;fieldset&gt; Contenu du cadre &lt;/fieldset&gt;
+
+Ecrire sur l'encadrer :
+&lt;fieldset&gt; 
+	&lt;legend&gt; Texte a afficher sur le cadre  &lt;/legend&gt;
+	Contenu du cadre
+&lt;/fieldset&gt;</pre>
+						</div>
+						
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Description :</h2>
+							<p>
+								La balise "fieldset" permet d'ajouter un cadre autour de tout ce qui est
+								entre lui et sa balise fermante.
+								<br/> <br/>
+								La balise "legend" quand a elle permet d'ajouter du texte dans le coin haut
+								droit du cadre.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+					</div>
+				</article>
+				
+				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"><br/></div>
+				
+				<!-- Article 12-->	
+				<article class="container col-xs-12 col-sm-12 col-md-5 col-lg-5 background-grey-text-white border">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h1 class="titre-article"> Utilisation de la balise map : </h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+							<h2> Code :</h2>
+							<pre class="background-black-text-white">
+&lt;img src="../images/map_global.png"
+usemap="#map" alt="..."/&gt;
+
+&lt;map name="map"&gt;
+	&lt;area shape="circle"
+	coords="x,y,rayon"
+	href="cible_lien_1"
+	alt="..."/&gt;
+	
+	&lt;area shape="rect"
+	coords="x1,y1,x2,y2"
+	href="cible_lien_2"
+	alt="..."/&gt;
+	
+	&lt;area shape="poly"
+	coords="x1,y1,x2,y2,..."
+	href="cible_lien_3"
+	alt="..."/&gt;
+&lt;/map&gt;</pre>
+						</div>
+						
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Description :</h2>
+							<p>
+								Une map est une image a laquelle on définit plusieurs zones.
+								Par exemple quand on clique sur une zone particulière de l'image
+								on est rediriger vers un une autre page etc...
+								<br/> <br/>
+								Pour l'utiliser il faut rajouter usemap="name_map" dans la balise
+								"img". Ensuite on ouvre une balise "map" avec comme name ce qu'il y a dans
+								votre usemap.
+								<br/><br/>
+								Maintenant il faut définir les zones cliquables et pour cela vous avez
+								le choix entre des rectangles, des cercles et des polygones.
+								Pour les définir c'est une balise "area" avec un attribut shape="rect/circle/poly"
+								et un attribut coords="liste des points pour définir la forme choisie".
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+					</div>
+				</article>
+				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+				
+				<!-- Article FORM big -->	
+				<article class="container col-xs-12 col-sm-12 col-md-12 col-lg-12 background-grey-text-white border">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h1 class="titre-article"> Les formulaires : </h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+							<h2> Code :</h2>
+							<pre class="background-black-text-white">
+Base d'un formulaire :
+&lt;form action="cible_formulaire" method="POST ou GET"&gt;
+	Insérez ici les éléments vu ci-dessous...
+	&lt;input type="submit" value="texte afficher dans le bouton"/&gt;
+&lt;/form&gt;
+
+Champs de texte :
+&lt;label for="nom_lie_label"&gt; Texte du label &lt;/label&gt;
+&lt;input id="nom_lie_label" type="text" required="required" name="nom_variable"/&gt;        <!-- required = obliger de le remplir -->
+
+Zone de texte :
+&lt;label for="id_zone" &gt; Texte du label &lt;/label&gt; 
+&lt;textarea id="id_zone" name="Commentaire"&gt; Texte déjà inscrit dans la zone &lt;/textarea&gt;
+
+Cases a cocher :
+&lt;input type="checkbox" name="nom_variable[]" value="valeur 1" /&gt; texte a afficher a coté de la case 1 &lt;br/&gt;
+&lt;input type="checkbox" name="nom_variable[]" value="valeur 2" /&gt; texte a afficher a coté de la case 2 &lt;br/&gt;
+&lt;input type="checkbox" name="nom_variable[]" value="valeur 3" /&gt; texte a afficher a coté de la case 3
+
+
+Bouton radio :
+&lt;input type="radio" name="nom_variable" value="valeur 1" checked /&gt; texte a afficher a coté du bouton 1 &lt;br/&gt;
+&lt;input type="radio" name="nom_variable" value="valeur 2"/&gt;  texte a afficher a coté du bouton 2
+
+Menu défilant :
+&lt;select&gt;
+	&lt;option name="nom_variable" value="valeur 1"&gt; texte a afficher dans le menu &lt;/option&gt;
+	&lt;option name="nom_variable" value="valeur 2"&gt; texte a afficher dans le menu &lt;/option&gt;
+	&lt;option name="nom_variable" value="valeur 3"&gt; texte a afficher dans le menu &lt;/option&gt;
+	&lt;option name="nom_variable" value="valeur 4"&gt; texte a afficher dans le menu &lt;/option&gt;
+&lt;/select&gt;
+							</pre>
+						</div>
+						
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Description :</h2>
+							<p>
+								Pour commencer un formulaire est une balise "form" avec comme attributs possibles
+								"action" qui peut être un script a exécuter en cas d'envoi de formulaire et "method"
+								qui a pour valeur soit "GET" soit "POST" (GET = élément du formulaire visible dans l'url
+								tandis que POST non). 
+								<br/>
+								Ensuite ce formulaire peut contenir des champs de texte, des zones de texte, des checkbox
+								ou des boutons radio ou encore des menus défilants... C'est comme vous voulez !
+								<br/>
+								Le plus important c'est que le formulaire finisse par un "input" de type="submit" car c'est lui
+								qui envoi le formulaire.
+								<br/><br/>
+								La balise "label" permet que lorsqu'on clique sur le texte du champs, le champs soit pré-sélectionné
+								sans qu'on est réellement besoin de cliquer dans le rectangle du champs. Il faut lui indiquer
+								dans l'attribut "for" l'id du champs auquel il est lié.
+								<br/><br/>
+								Vous pouvez rendre avec des champs obligatoire avec l'attribut "required" et vous pouvez aussi
+								pré-sélectionner des boutons radio avec l'attribut "checked".
+								<br/>
+								Il existe d'autres types de bouton mais ceci sont les principaux.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+					</div>
+				</article>
 				
 				<!-- Pied de page -->
 				<div class="row"> <br/>
