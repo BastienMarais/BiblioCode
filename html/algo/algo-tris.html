@@ -179,12 +179,12 @@ Fin TriInsertion ;</code></pre>
 							<pre><code>Fonction TriRapide(tableau T, entier gauche, entier droite) :
 // Utilise : Placer, TriRapide ;
 // Variables locales : 
-// k un entier ;
+// pivot un entier ;
 
 	Si gauche &lt; droite alors :
-		T,k = Placer(T,gauche,droite) ;
-		T = TriRapide(T,gauche,k - 1) ;
-		T = TriRapide(T,k + 1,droite) ;
+		T,pivot = Placer(T,gauche,droite) ;
+		T = TriRapide(T,gauche,pivot - 1) ;
+		T = TriRapide(T,pivot + 1,droite) ;
 		Retourner T ;
 	Fin si ;
 	
@@ -193,7 +193,7 @@ Fin TriRapide ;
 Fonction Placer(tableau T, entier gauche, entier droite) :
 // Utilise Echanger ;
 // Variables locales :
-// bas, haut et k trois entiers ;
+// bas, haut et pivot trois entiers ;
 
 	bas = gauche + 1 ;
 	haut = droite ;
@@ -212,8 +212,8 @@ Fonction Placer(tableau T, entier gauche, entier droite) :
 	Fin tant que ;
 	
 	Echanger(T[gauche], T[haut]) ;
-	k = haut ;
-	Retourner T,k ;
+	pivot = haut ;
+	Retourner T,pivot ;
 	
 Fin Placer ;
 
@@ -240,18 +240,18 @@ def placer(tab,gauche,droite) :
 			bas = bas + 1
 			haut = haut - 1 
 	tab[gauche],tab[haut] = echanger(tab[gauche],tab[haut])
-	k = haut
+	pivot = haut
 	tab.remove(max(tab))
-	return tab,k
+	return tab,pivot
 
 
 def triRapide(tab,gauche,droite) :
 	if gauche &lt; droite:
-		tab,k = placer(tab,gauche,droite)
+		tab,pivot = placer(tab,gauche,droite)
 		print tab
-		tab = triRapide(tab,gauche,k-1)
+		tab = triRapide(tab,gauche,pivot-1)
 		print tab
-		tab = triRapide(tab,k+1,droite)
+		tab = triRapide(tab,pivot+1,droite)
 	return tab</code></pre>
 						</div>
 					</div>
