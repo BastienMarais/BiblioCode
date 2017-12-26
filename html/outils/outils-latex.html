@@ -119,24 +119,162 @@
 			<content class="container">
 				
 				
+				<!-- Introduction -->
+				
+				<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><br/></div>
+				<article class="container col-xs-12 col-sm-12 col-md-10 col-lg-10 background-grey-text-white border">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h1 class="titre-article">Introduction : </h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<p>
+								Le LaTeX est un langage informatique compiler qui permet
+								de crée des document text le plus professionelment possible.
+								On peut ajouter que LaTeX permet d'écrire très facilement des formules mathématiques.
+								il est donc trés diffudé dans le monde scientifique.
+							</p>
+							<h5 >Installation  </h5>
+							<p>
+								Le LaTeX est un langage <b> Complier </b>  il faut donc dans un premier temps
+								installer le compilateur. <br />
+								Comme compilateur je peux vous conseiller :
+								<ul> 
+									<li> <a href ="https://miktex.org/"> <b>MIKTEX</b> </a> qui marche sur Windows. </li>
+									<li> <a href = "http://www.tug.org/mactex/" > <b>MACTEX </b> </a> pour Mac </li>
+									<li> Et <b>KILE</b> pour Linux
+									<li> Des site en ligne permet aussie de crée des fichier LaTeX en drive comme <a href = "https://www.sharelatex.com/"> <b> SharLaTeX  </b></a> </li>
+								</ul>
+								Aprés avoir installer le compilateur je vous conseil d'installer aussie un editeur LaTeX. Il n'est pas obligatoir mais fortement conseillé.
+							<p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+					</div>
+				</article>
+				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+				
 				<!-- Article 1 -->
 				<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><br/></div>
 				<article class="container col-xs-12 col-sm-12 col-md-10 col-lg-10 background-grey-text-white border">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<h1 class="titre-article">Les bases : </h1>
+							<h1 class="titre-article">Mise en page de Base : </h1>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-							<h2>Pseudo code :</h2>
-							<pre><code class="php">TODO</code></pre>
+							<h2>Code :</h2>
+							<pre><code class="Tex">
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc} % permet la prise en charge des caractères accentués
+\RequirePackage{fancyhdr}  % permet la gestion des En-têtes et Pied de pages
+\RequirePackage[french]{babel}   % permet d'avoir les différentes particularités typographique propre au Français
+\RequirePackage{amsmath}   % permet l'adjonction de nouvelles fontes Mathématiques
+\RequirePackage{amssymb}
+\RequirePackage{calc} % permet d'utiliser les opérations + et -
+\RequirePackage{lastpage}   % permet de déterminer le numéro de la dernière page \RequirePackage{fancyhdr}
+\RequirePackage{multicol}   % permet l'utilisation de l'environnment multicol permettant d'écrire sur plusieurs colonnes
+\RequirePackage{theorem}   % permet de définir de nouveaux environnments en utilisant la commande \newtheorem
+\RequirePackage[dvips]{graphics}    % permet d'insérer des images .eps dans le document
+\usepackage{pstricks}% charge des macros de dessin vectoriel (trés intéressant
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{pst-node} % permet de faire des dessins de type graphe
+\usepackage{pst-plot}
+\usepackage{listings}
+\usepackage{wasysym}
+\usepackage{eurosym}
+% définition de la disposition générale
+% --------------------------------------
+\setlength{\voffset}{-2cm}
+\setlength{\hoffset}{-2cm}
+\setlength{\topmargin}{1cm}
+\setlength{\textwidth}{18cm}
+\setlength{\textheight}{23cm}
+\setlength{\headsep}{1.7cm}
+
+% utilisation de couleur
+\usepackage{color}
+\usepackage{colortbl}
+\definecolor{bleu}{rgb}{0,0,1} % définit une couleur bleue
+\definecolor{vert}{rgb}{0,1,0} % définit une couleur verte
+\definecolor{rouge}{rgb}{1,0,0} % définit une couleur rouge
+
+\newcommand{\ds}{\displaystyle} % permet l'affichage en ligne de formule
+
+\newcommand{\inter}{\cap} %redéfinition de intersection
+\newcommand{\union}{\cup} %redéfinition de réunion
+
+\renewcommand{\bar}[1]{\overline{\strut #1}} % permet de faire overline avec espace
+
+% commandes pour vecteurs et repère :
+\newcommand{\oij}{(O,\overrightarrow{i},\overrightarrow{j})}
+\newcommand{\oijk}{(O,\overrightarrow{i},\overrightarrow{j}),\overrightarrow{k}}
+\newcommand{\vect}{\overrightarrow}
+\newcommand{\sach}[2]{p \left( \raisebox{0.1cm}{#1} / \raisebox{-0.1cm}{#2} \right)} %proba sachant que
+
+% Les ensembles de nombres
+\def\R{\mathbb{R}}
+\def\N{\mathbb{N}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\D{\mathbb{D}}
+\def\C{\mathbb{C}}
+
+%ENVIRONNEMENT EXOS Peut s'adapter à autre chose
+% permet de numéroter les exos automatiquement
+%-----------------------------
+\newcounter{exer}
+% initialisation du compteur à 1
+\setcounter{exer}{1}
+% création de l'environnement
+\newenvironment{exercice}[1][]
+% début de l'environnement ave le nom, le numéro, etc...
+{ \underline{\textbf{Exercice \arabic{exer} }} \textit{#1}
+\begin{flushleft}}
+% fin de l'environnement
+{\end{flushleft} \addtocounter{exer}{1} }
+
+%AUTRES ENVIRONNEMENTS
+% ---------------------------
+
+
+% définition des en-têtes et pieds de page
+\pagestyle{fancy}
+% insère un logo
+\lhead{\includegraphics[scale=0.35]{image.png} }
+
+\cfoot{ \textsl{Page~\thepage{} sur~\pageref{LastPage} } }  
+% bas de page centré pour la numérotation des pages
+
+\rhead{{Auteur}
+\rfoot{\jobname} % le nom du fichier facultatif
+% -------------
+% DOCUMENT
+% -------------
+\begin{document}
+	contenu
+\end{document}	
+							</code></pre>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Explications :</h2>
 							<p>
-								TODO
-							</p>
+								Le code ci-join est une mise en page type que je vous propose. (libre a vous de la gardé ou non).
+								On peut voir qu'elle se construit en 3 partie.
+								<br />
+								<b> Partie 1 </b> on appel les Packages qu'on va utiliser (ou non il y a de nombreux Package que j'appel par précaution) <br />
+								<b> Partie 2 </b> on definie la mise en page avec les espace entre les lignes, les marge , les couleur ect ... <br />
+								<b> Partie 3 </b> on peut definir ou redefinir des environnement pour les adopter a se qu'on souhaite. <br />
+								<b> Partie 4 </b> Dans l'environnement document on ecrit notre code LaTeX en lui même.
+							</p> 
 						</div>
 					</div>
 					<div class="row">
