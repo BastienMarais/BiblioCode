@@ -17,8 +17,8 @@ Site regroupant des informations utiles pour des développeurs.
   * MySQL // TODO
   * MongoDB // TODO
 #### OUTILS
-  * Latex // TODO
-  * Git // TODO
+  * LaTeX // En cours
+  * Git // En cours
 #### Intelligence Artificielle
   * Algo génétique // TODO
   * Réseau neuronal // TODO
