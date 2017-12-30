@@ -290,28 +290,77 @@
 				<article class="container col-xs-12 col-sm-12 col-md-10 col-lg-10 background-grey-text-white border">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<h1 class="titre-article">Les bases : </h1>
+							<h1 class="titre-article">L'accentuation : </h1>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-							<h2>Pseudo code :</h2>
-							<pre><code class="php">TODO</code></pre>
+							<h2>les accents  :</h2>
+							<pre><code class="Tex">
+\begin{document}
+
+\`{e} %è
+\^{e} %ê
+\¨{e} %ë
+ect ...
+
+\end{document}
+							</code></pre>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Explications :</h2>
 							<p>
-								TODO
+								De base LaTeX ne prend pas en compte l'accentuation. Pour qu'il puisse les prendre en compte il faut écrire la synthase suivante :  <br />
+								\accent{lettre}
 							</p>
 						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 					</div>
 					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2> Astuce </h2>
+							<pre><code class="Tex">
+\usepackage[utf8]{inputenc}
+							</code></pre>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Explications :</h2>
+							<p>
+								Ce package vous facilitera grandemant la vie en vous permetant d'ecrire directement les lettre accentuer. Noublier pas de le rajouter en haut de chaqu'un de vos documents.
+							</p>
+						</div>
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 					</div>
 				</article>
 				
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 				
+				<!-- article 3 -->
+				<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><br/></div>
+				<article class="container col-xs-12 col-sm-12 col-md-10 col-lg-10 background-grey-text-white border">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h1 class="titre-article">Incertion d'une immage: </h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Exemple :</h2>
+							<pre><code class="Tex">
+\begin{center}
+	\includegraphics[scale=echelle]{chemin.png}
+\end{center}
+							</code></pre>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Explications :</h2>
+							<p>
+								toto
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+					</div>
+				</article>
 				
 				
 				<!-- Pied de page -->
