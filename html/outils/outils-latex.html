@@ -349,13 +349,21 @@ ect ...
 							<pre><code class="Tex">
 \begin{center}
 	\includegraphics[scale=echelle]{chemin.png}
+	\label{nom du label}
+	\ref{nom du label} legende de l image.
 \end{center}
 							</code></pre>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Explications :</h2>
 							<p>
-								toto
+								la command \includegraphics permet d'importer une image dans le document. Si vous regardez les package qu'on utilise vous pourrez voir qu'on peut importer 
+								d'autre type de fichier que des ".jpg" ou ".png". <br />
+								"scale" Vous permet de définir l'échelle de votre image, par exemple scale = 0.5 vous donnera une image qui fera la moitié de l'originale.
+								On peut spécifier si on veut changer que la hauteur ou la largeur de l'image.
+							</p>
+							<p>
+								\label permet de referencier cette image. Cette referencie pourra être reutiliser par la balise \ref
 							</p>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
