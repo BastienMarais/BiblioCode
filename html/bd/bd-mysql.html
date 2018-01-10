@@ -140,12 +140,42 @@ WHERE ... ;	/* conditions a vérifier */
 SELECT colonne_1, colonne_2	/* ce qu'on veut afficher */
 FROM table_1, table_2		/* les tables dont on a besoin */
 WHERE element_commun_table_1 = element_commu_table_2 ;		/* lié avec un élément commun */
+
+/* Requête imbriquées : */
+SELECT colonne_1, colonne_2	
+FROM table_1		
+WHERE element_commun_table_1 in	( 	SELECT element_commu_table_2 
+					FROM table_2
+					WHERE ... );
+
+/* Opération de base sur les colonnes */
+SELECT 	avg(colonne) 	/* moyenne des valeurs de la colonne */
+	sum(colonne) 	/* somme des valeurs de la colonne */
+	max(colonne)	/* maximum des valeurs de la colonne */
+	min(colonne)	/* minimum des valeurs de la colonne */
+FROM ...
+WHERE ... ;
+
+/* Insérer une ligne dans une table : */
+
+/* Supprimer une ligne dans une table : */
+
+/* Création de table : */
+
+/* Supprimer une table : */
+
+/* Lister les tables existantes : */
+
+
+
 </code></pre>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Explications :</h2>
-							<p>
-								TODO
+							<p>	
+								Cette partie est un pense bête et necessite un minimum de connaissances.
+								Si vous avez besoin d'informations sur un élément précis je vous conseil
+								<a href="http://sql.sh/"> ce site </a> .
 							</p>
 						</div>
 					</div>
@@ -157,32 +187,6 @@ WHERE element_commun_table_1 = element_commu_table_2 ;		/* lié avec un élémen
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 				
 
-				<!-- Article 2 -->
-				<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><br/></div>
-				<article class="container col-xs-12 col-sm-12 col-md-10 col-lg-10 background-grey-text-white border">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<h1 class="titre-article">Les bases : </h1>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-							<h2>Pseudo code :</h2>
-							<pre><code class="php">TODO</code></pre>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-							<h2>Explications :</h2>
-							<p>
-								TODO
-							</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
-					</div>
-				</article>
-				
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 				
 				
 				
