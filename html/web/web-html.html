@@ -698,9 +698,13 @@ Cases a cocher :
 
 
 Bouton radio :
-&lt;input type="radio" name="nom_variable" value="valeur 1" checked /&gt; texte a afficher a coté du bouton 1 &lt;br/&gt;
-&lt;input type="radio" name="nom_variable" value="valeur 2"/&gt;  texte a afficher a coté du bouton 2
-
+<fieldset>
+<legend> texte legend </legend>
+	<label for="id_r1" > Texte du label pour r1 </label><br/>
+	<input type="radio" name="nom_variable" value="valeur 1" id="r1" checked />  <br/>
+	<label for="id_r2" > Texte du label pour r2</label><br/>
+	<input type="radio" name="nom_variable" value="valeur 2" id="r2"/>  
+</fieldset>
 Menu défilant :
 &lt;select&gt;
 	&lt;option name="nom_variable" value="valeur 1"&gt; texte a afficher dans le menu 1 &lt;/option&gt;
@@ -754,9 +758,10 @@ Menu défilant :
 										<input type="checkbox" name="nom_variable[]" value="valeur 3" /> texte a afficher a coté de la case 3
 									</div>
 									<div class="border">
-										Bouton radio :<br/>
-										<input type="radio" name="nom_variable" value="valeur 1" checked /> texte a afficher a coté du bouton 1 <br/>
-										<input type="radio" name="nom_variable" value="valeur 2"/>  texte a afficher a coté du bouton 2
+										<label for="id_r1" > Texte du label pour r1 </label><br/>
+										<input type="radio" name="nom_variable" value="valeur 1" id="r1" checked />  <br/>
+										<label for="id_r2" > Texte du label pour r2</label><br/>
+										<input type="radio" name="nom_variable" value="valeur 2" id="r2"/>  
 									</div>
 									<div class="border">
 										Menu défilant :<br/>
