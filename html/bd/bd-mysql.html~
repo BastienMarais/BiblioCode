@@ -159,7 +159,7 @@ WHERE ... ;
 INSERT INTO table (nom_colonne_1, nom_colonne_2, ...)
 VALUES ('valeur 1', 'valeur 2', ...) ;
 
-/* ou */
+/* ou pour entrez toutes les valeurs directement : */
 
 INSERT INTO table VALUES ('valeur 1', 'valeur 2', ...) ;
 
