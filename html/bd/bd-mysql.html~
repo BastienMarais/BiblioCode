@@ -130,8 +130,7 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Requêtes générales :</h2>
-							<pre><code class="sql">
-/* Modèle de base : */
+							<pre><code class="sql">/* Modèle de base : */
 SELECT ...	/* ce qu'on veut afficher */
 FROM ...	/* les tables dont on a besoin */
 WHERE ... ;	/* conditions a vérifier */
@@ -146,7 +145,7 @@ SELECT colonne_1, colonne_2
 FROM table_1		
 WHERE element_commun_table_1 in	( 	SELECT element_commun_table_2 
 					FROM table_2
-					WHERE ... );
+					WHERE ... ) ;
 
 /* Opération de base sur les colonnes */
 SELECT 	avg(colonne) 	/* moyenne des valeurs de la colonne */
@@ -157,19 +156,40 @@ FROM ...
 WHERE ... ;
 
 /* Insérer une ligne dans une table : */
+INSERT INTO table (nom_colonne_1, nom_colonne_2, ...)
+VALUES ('valeur 1', 'valeur 2', ...) ;
+
+/* ou */
+
+INSERT INTO table VALUES ('valeur 1', 'valeur 2', ...) ;
 
 /* Supprimer une ligne dans une table : */
+DELETE FROM table
+WHERE ... ;
 
 /* Modifier une ligne dans une table : */
+UPDATE table_1
+SET nom_colonne_1 = 'nouvelle valeur', nom_colonne_2 = 'nouvelle valeur'
+WHERE ... ;
 
 /* Création de table : */
+CREATE TABLE nom_table
+(
+    colonne_1 type_donnees, /* type = int ,varchar(50)... */
+    colonne_2 type_donnees,
+    ...
+) ;
+
 
 /* Supprimer une table : */
+DROP TABLE nom_table ;
+
+/* Modifier une table : */
+ALTER TABLE nom_table
+ADD nom_colonne type_donnees ;
 
 /* Lister les tables existantes : */
-
-
-
+SELECT table_name FROM all_tables ;
 </code></pre>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
