@@ -14,11 +14,11 @@ Site regroupant des informations utiles pour des développeurs.
   * Graphes // TODO
   * Arbres // TODO
 #### BD
-  * MySQL // TODO
+  * MySQL 
   * MongoDB // TODO
 #### OUTILS
-  * LaTeX // En cours
-  * Git // En cours
+  * LaTeX // A corriger
+  * Git
 #### Intelligence Artificielle
   * Algo génétique // TODO
   * Réseau neuronal // TODO
