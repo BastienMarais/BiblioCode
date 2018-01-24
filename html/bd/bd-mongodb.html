@@ -18,7 +18,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 		<script>hljs.initHighlightingOnLoad();</script>
-		<title> BD-MYSQL </title>
+		<title> BD-MONGODB </title>
 	</head>
 	<body class="background-grey">
 		<a id="haut"></a>
@@ -118,6 +118,56 @@
 			<br/>
 			<!-- Corps de la page -->
 			<content class="container" role="main">
+				
+				<!-- Article 1 -->
+				<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><br/></div>
+				<article class="container col-xs-12 col-sm-12 col-md-10 col-lg-10 background-grey-text-white border">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h1 class="titre-article">Les bases : </h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Requêtes générales :</h2>
+							<pre><code class="js"> /* voir toutes les bases de données : */
+show dbs
+
+/* voir les collections présentes : */
+show collections 
+
+/* voir la base dans laquelle on est : */
+db 
+
+/* sélection la base de données a utiliser : */
+use NOM_BASE
+
+/* trouver une valeur dans sa base : */
+db.NOM_COLLECTION.find({ NOM_CHAMP : VALEUR })
+
+/* insérer une valeur : */
+db.NOM_COLLECTION.insert({ NOM_CHAMP : VALEUR, NOM_CHAMP_2 : VALEUR_2})
+
+
+</code></pre>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h2>Explications :</h2>
+							<p>	
+								Cette partie est un pense bête et necessite un minimum de connaissances.
+								Si vous avez besoin de plus d'informations je vous conseil
+								<a href="https://buzut.fr/commandes-de-base-de-mongodb/" target="_blank"> ce site </a> .
+								Mongo utilise du js donc vous pouvez faire des boucles, if etc... pour travailler
+								sur votre base de données.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
+					</div>
+				</article>
+				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
 				
 			</content>
 				
