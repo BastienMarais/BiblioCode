@@ -9,13 +9,14 @@ Site regroupant des informations utiles pour des développeurs.
   * PHP // TODO
   * JS // TODO
   * XML et XSL // TODO
+  * Bootstrap
 #### ALGO
-  * Tris
+  * Tris  // Tri fusion a ajouter
   * Graphes // TODO
   * Arbres // TODO
 #### BD
   * MySQL 
-  * MongoDB // TODO
+  * MongoDB
 #### OUTILS
   * LaTeX // A corriger
   * Git
