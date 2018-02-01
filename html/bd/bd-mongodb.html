@@ -142,12 +142,17 @@ db
 /* sélection la base de données a utiliser : */
 use NOM_BASE
 
+/* supprimer la base où l'on se trouve : */
+db.dropDatabase()
+
 /* trouver une valeur dans sa base : */
 db.NOM_COLLECTION.find({ NOM_CHAMP : VALEUR })
 
 /* insérer une valeur : */
-db.NOM_COLLECTION.insert({ NOM_CHAMP : VALEUR, NOM_CHAMP_2 : VALEUR_2})
+db.NOM_COLLECTION.insert({ NOM_CHAMP : VALEUR, NOM_CHAMP_2 : VALEUR_2 })
 
+/* supprimer une valeur : */
+db.NOM_COLLECTION.remove({ NOM_CHAMP : VALEUR })
 
 </code></pre>
 						</div>
@@ -158,7 +163,8 @@ db.NOM_COLLECTION.insert({ NOM_CHAMP : VALEUR, NOM_CHAMP_2 : VALEUR_2})
 								Si vous avez besoin de plus d'informations je vous conseil
 								<a href="https://buzut.fr/commandes-de-base-de-mongodb/" target="_blank"> ce site </a> .
 								Mongo utilise du js donc vous pouvez faire des boucles, if etc... pour travailler
-								sur votre base de données.
+								sur votre base de données. Voici le lien vers 
+								<a href="https://docs.mongodb.com/manual/" target="_blank"> le manuel de Mongodb.</a>
 							</p>
 						</div>
 					</div>
