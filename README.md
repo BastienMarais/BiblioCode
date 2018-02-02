@@ -23,7 +23,9 @@ Site regroupant des informations utiles pour des développeurs.
 #### Intelligence Artificielle
   * Algo génétique // TODO
   * Réseau neuronal // TODO
-
+#### Bash
+  * Cheatsheet bash // https://devhints.io/bash
+  * Scripts utiles // format_name.sh
 # Suggestions
 
 Si vous avez des suggestions sur des parties a ajouter n'hésitez pas a déposer une issue.
