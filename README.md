@@ -5,7 +5,7 @@ Site regroupant des informations utiles pour des développeurs.
 ### Sujets traités : 
 #### WEB
   * HTML 
-  * CSS // https://devhints.io/css
+  * CSS 
   * PHP // TODO
   * JS // TODO
   * XML et XSL // TODO
@@ -18,14 +18,14 @@ Site regroupant des informations utiles pour des développeurs.
   * MySQL 
   * MongoDB
 #### OUTILS
-  * LaTeX // A corriger
+  * LaTeX 
   * Git
 #### Intelligence Artificielle
   * Algo génétique // TODO
   * Réseau neuronal // TODO
 #### Bash
-  * Cheatsheet bash // https://devhints.io/bash
-  * Scripts utiles // format_name.sh
+  * Cheatsheet bash 
+  * Scripts utiles 
 # Suggestions
 
 Si vous avez des suggestions sur des parties a ajouter n'hésitez pas a déposer une issue.
