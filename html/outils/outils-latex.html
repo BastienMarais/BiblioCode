@@ -40,7 +40,7 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li><a href="../web/web-html.html">HTML</a></li>
-							<li><a href="../web/web-css.html">CSS</a></li>
+							<li><a href="https://devhints.io/css" target="blank">CSS</a></li>
 							<li><a href="../web/web-php.html">PHP</a></li>
 							<li><a href="../web/web-js.html">JS</a></li>
 							<li><a href="../web/web-xml-xsl.html">XML et XSL</a></li>
@@ -95,6 +95,17 @@
 					<li>
 						<a href="../IA/IA.html"> Intelligence Artificielle </a>
 					</li>
+					<!-- Menu Bash -->
+					<li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown">
+							Bash
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="https://devhints.io/bash" target="blank">Bash</a></li>
+							<li><a href="../bash-scripts.html">Scripts utiles</a></li>
+						</ul>
+					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li>
@@ -138,14 +149,14 @@
 							</p>
 							<h3>Installation  </h3>
 							<p>
-								Le LaTeX est un langage <b> Compilé </b>  il faut donc dans un premier temps
+								Le LaTeX est un langage <b> compilé </b>  il faut donc dans un premier temps
 								installer le compilateur. <br />
 								Comme compilateur je peux vous conseiller :
 								<ul> 
-									<li> <a href ="https://miktex.org/"> <b>MIKTEX</b> </a> qui marche sur Windows. </li>
-									<li> <a href = "http://www.tug.org/mactex/" > <b>MACTEX </b> </a> pour Mac </li>
+									<li> <a href ="https://miktex.org/" target="blank"> <b>MIKTEX</b> </a> qui marche sur Windows. </li>
+									<li> <a href = "http://www.tug.org/mactex/" target="blank"> <b>MACTEX </b> </a> pour Mac </li>
 									<li> Et <b>KILE</b> pour Linux
-									<li> Des sites en lignes permettent aussi de créer des fichiers LaTeX en drive comme <a href = "https://www.sharelatex.com/"> <b> SharLaTeX  </b></a> </li>
+									<li> Des sites en lignes permettent aussi de créer des fichiers LaTeX en drive comme <a href = "https://www.sharelatex.com/" target="blank"> <b> SharLaTeX  </b></a> </li>
 								</ul>
 								Aprés avoir installer le compilateur, je vous conseil d'installer aussi un éditeur LaTeX. Il n'est pas obligatoire mais fortement conseillé.
 							<p>
@@ -163,7 +174,7 @@
 				<article class="container col-xs-12 col-sm-12 col-md-10 col-lg-10 background-grey-text-white border">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<h1 class="titre-article">Mise en page de Base : </h1>
+							<h1 class="titre-article">Mise en page de base : </h1>
 						</div>
 					</div>
 					<div class="row">
@@ -236,7 +247,7 @@
 \setcounter{exer}{1}
 % création de l'environnement
 \newenvironment{exercice}[1][]
-% début de l'environnement ave le nom, le numéro, etc...
+% début de l'environnement avec le nom, le numéro, etc...
 { \underline{\textbf{Exercice \arabic{exer} }} \textit{#1}
 \begin{flushleft}}
 % fin de l'environnement
@@ -271,10 +282,10 @@
 							</p>
 							<p> On peut voir qu'elle se construit en 4 parties : </p>
 							<ul>
-								<li><b> Partie 1 :</b> on appel les Packages qu'on va utiliser (ou non il y a de nombreux Package que j'appel par précaution)</li>
-								<li><b> Partie 2 :</b> on definie la mise en page avec les espace entre les lignes, les marge , les couleur ect ... </li>
-								<li><b> Partie 3 :</b> on peut definir ou redefinir des environnement pour les adopter a ce qu'on souhaite. </li>
-								<li><b> Partie 4 :</b> Dans l'environnement "document" on ecrit notre code LaTeX en lui même.</li>
+								<li><b> Partie 1 :</b> on appel les Packages qu'on va utiliser (ou non il y a de nombreux Packages que j'appel par précaution)</li>
+								<li><b> Partie 2 :</b> on définie la mise en page avec les espaces entre les lignes, les marges , les couleurs ect ... </li>
+								<li><b> Partie 3 :</b> on peut définir ou redéfinir des environnements pour les adapter a ce qu'on souhaite. </li>
+								<li><b> Partie 4 :</b> Dans l'environnement "document" on écrit notre code LaTeX en lui même.</li>
 							</ul>
 						</div>
 					</div>
@@ -295,7 +306,7 @@
 					</div>
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-							<h2>les accents  :</h2>
+							<h2>Les accents  :</h2>
 							<pre><code class="Tex">
 \begin{document}
 
@@ -310,7 +321,7 @@ ect ...
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Explications :</h2>
 							<p>
-								De base LaTeX ne prend pas en compte l'accentuation. Pour qu'il puisse les prendre en compte il faut écrire la synthase suivante :  <br />
+								De base LaTeX ne prend pas en compte l'accentuation. Pour qu'il puisse la prendre en compte, il faut écrire la ligne suivante :  <br/>
 								\accent{lettre}
 							</p>
 						</div>
@@ -318,7 +329,7 @@ ect ...
 					</div>
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-							<h2> Astuce </h2>
+							<h2> Astuce :</h2>
 							<pre><code class="Tex">
 \usepackage[utf8]{inputenc}
 							</code></pre>
@@ -326,7 +337,7 @@ ect ...
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Explications :</h2>
 							<p>
-								Ce package vous facilitera grandemant la vie en vous permetant d'ecrire directement les lettre accentuer. Noublier pas de le rajouter en haut de chaqu'un de vos documents.
+								Ce package vous facilitera grandemant la vie en vous permetant d'écrire directement les lettres accentuées. N'oubliez pas de le rajouter en haut de chacun de vos documents.
 							</p>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>
@@ -340,7 +351,7 @@ ect ...
 				<article class="container col-xs-12 col-sm-12 col-md-10 col-lg-10 background-grey-text-white border">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<h1 class="titre-article">Incertion d'une immage: </h1>
+							<h1 class="titre-article">Insertion d'une image : </h1>
 						</div>
 					</div>
 					<div class="row">
@@ -357,13 +368,13 @@ ect ...
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2>Explications :</h2>
 							<p>
-								la command \includegraphics permet d'importer une image dans le document. Si vous regardez les package qu'on utilise vous pourrez voir qu'on peut importer 
-								d'autre type de fichier que des ".jpg" ou ".png". <br />
+								La commande \includegraphics permet d'importer une image dans le document. Si vous regardez les packages qu'on utilise vous pourrez voir qu'on peut importer 
+								d'autres types de fichier que des ".jpg" ou ".png". <br/>
 								"scale" Vous permet de définir l'échelle de votre image, par exemple scale = 0.5 vous donnera une image qui fera la moitié de l'originale.
 								On peut spécifier si on veut changer que la hauteur ou la largeur de l'image.
 							</p>
 							<p>
-								\label permet de referencier cette image. Cette referencie pourra être reutiliser par la balise \ref
+								\label permet de référencer cette image. Cette reference pourra être réutilisée par la balise \ref
 							</p>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br/></div>

@@ -40,7 +40,7 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li class="active"><a href="web-html.html">HTML</a></li>
-							<li><a href="web-css.html">CSS</a></li>
+							<li><a href="https://devhints.io/css" target="blank">CSS</a></li>
 							<li><a href="web-php.html">PHP</a></li>
 							<li><a href="web-js.html">JS</a></li>
 							<li><a href="web-xml-xsl.html">XML et XSL</a></li>
@@ -94,6 +94,17 @@
 					</li>
 					<li>
 						<a href="../IA/IA.html"> Intelligence Artificielle </a>
+					</li>
+					<!-- Menu Bash -->
+					<li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown">
+							Bash
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="https://devhints.io/bash" target="blank">Bash</a></li>
+							<li><a href="../bash-scripts.html">Scripts utiles</a></li>
+						</ul>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
@@ -653,7 +664,8 @@ usemap="#map" alt="..."/&gt;
 							<p>
 								Pour ajouter la coloration syntaxique a vos codes non interprétés vous devez
 								mettre ces lignes la dans la balise &lt;head&gt;
-								<br/><br/>
+								<br/>
+								<br/>
 								Pour votre insérer du code il vous suffit de mettre les balises
 								&lt;pre&gt;&lt;code&gt;.
 							</p>
@@ -692,22 +704,36 @@ Zone de texte :
 &lt;textarea id="id_zone" name="Commentaire"&gt; Texte déjà inscrit dans la zone &lt;/textarea&gt;
 
 Cases a cocher :
-&lt;input type="checkbox" name="nom_variable[]" value="valeur 1" /&gt; texte a afficher a coté de la case 1 &lt;br/&gt;
-&lt;input type="checkbox" name="nom_variable[]" value="valeur 2" /&gt; texte a afficher a coté de la case 2 &lt;br/&gt;
-&lt;input type="checkbox" name="nom_variable[]" value="valeur 3" /&gt; texte a afficher a coté de la case 3
-
+&lt;fieldset&gt;
+&lt;legend&gt; texte legend &lt;/legend&gt;
+	&lt;label for="id_c1" > Texte du label pour c1 &lt;/label&gt;
+	&lt;br/&gt;
+	&lt;input type="checkbox" name="nom_variable[]" value="valeur 1" id="id_c1" /&gt; texte a afficher a coté de la case 1 
+	&lt;br/&gt;
+	&lt;label for="id_c2" > Texte du label pour c2 &lt;/label&gt;
+	&lt;br/&gt;
+	&lt;input type="checkbox" name="nom_variable[]" value="valeur 2" id="id_c2" /&gt; texte a afficher a coté de la case 2 
+	&lt;br/&gt;
+	&lt;label for="id_c3" > Texte du label pour c3 &lt;/label&gt;
+	&lt;br/&gt;
+	&lt;input type="checkbox" name="nom_variable[]" value="valeur 3" id="id_c3" /&gt; texte a afficher a coté de la case 3
+&lt;/fieldset&gt;
 
 Bouton radio :
 &lt;fieldset&gt;
 &lt;legend&gt; texte legend &lt;/legend&gt;
-	&lt;label for="id_r1" > Texte du label pour r1 &lt;/label&gt;&lt;br/&gt;
-	&lt;input type="radio" name="nom_variable" value="valeur 1" id="id_r1" checked /&gt;  &lt;br/&gt;
-	&lt;label for="id_r2" > Texte du label pour r2&lt;/label> &lt;br/&gt;
+	&lt;label for="id_r1" > Texte du label pour r1 &lt;/label&gt;
+	&lt;br/&gt;
+	&lt;input type="radio" name="nom_variable" value="valeur 1" id="id_r1" checked /&gt;  
+	&lt;br/&gt;
+	&lt;label for="id_r2" > Texte du label pour r2&lt;/label> 
+	&lt;br/&gt;
 	&lt;input type="radio" name="nom_variable" value="valeur 2" id="id_r2"/&gt; 
 &lt;/fieldset&gt;
 
 Menu défilant :
-&lt;select&gt;
+&lt;label for="id_s1" > Texte du label pour s1 &lt;/label> 
+&lt;select id="id_s1"&gt;
 	&lt;option name="nom_variable" value="valeur 1"&gt; texte a afficher dans le menu 1 &lt;/option&gt;
 	&lt;option name="nom_variable" value="valeur 2"&gt; texte a afficher dans le menu 2 &lt;/option&gt;
 	&lt;option name="nom_variable" value="valeur 3"&gt; texte a afficher dans le menu 3 &lt;/option&gt;
@@ -729,11 +755,13 @@ Menu défilant :
 								<br/>
 								Le plus important c'est que le formulaire finisse par un &lt;input&gt; de type="submit" car c'est lui
 								qui envoi le formulaire.
-								<br/><br/>
+								<br/>
+								<br/>
 								La balise &lt;label&gt; permet que lorsqu'on clique sur le texte du champs, le champs soit pré-sélectionné
 								sans qu'on est réellement besoin de cliquer dans le rectangle du champs. Il faut lui indiquer
 								dans l'attribut "for" l'id du champs auquel il est lié.
-								<br/><br/>
+								<br/>
+								<br/>
 								Vous pouvez rendre avec des champs obligatoire avec l'attribut "required" et vous pouvez aussi
 								pré-sélectionner des boutons radio avec l'attribut "checked".
 								<br/>
@@ -742,40 +770,63 @@ Menu défilant :
 							<h2>Résultat :</h2>
 							<div class="rendu">
 								<form action="" method="">
-									<div class="border">
-										Champs de texte :<br/>
-										<label for="nom_lie_label"> Texte du label </label>
+									<div>
+										<label for="nom_lie_label"> Champs de texte : </label>
+										<br/>
 										<input id="nom_lie_label" type="text" required="required" name="nom_variable"/>        
 									</div>
-									<div class="border">
-										Zone de texte :<br/>
-										<label for="id_zone" > Texte du label </label><br/>
+									<br/>
+									<div>
+										<label for="id_zone" > Zone de texte : </label>
+										<br/>
 										<textarea id="id_zone" name="Commentaire">Texte déjà inscrit dans la zone </textarea>
 									</div>
-									<div class="border">
-										Cases a cocher :<br/>
-										<input type="checkbox" name="nom_variable[]" value="valeur 1" /> texte a afficher a coté de la case 1 <br/>
-										<input type="checkbox" name="nom_variable[]" value="valeur 2" /> texte a afficher a coté de la case 2 <br/>
-										<input type="checkbox" name="nom_variable[]" value="valeur 3" /> texte a afficher a coté de la case 3
+									<br/>
+									<div>
+										<fieldset>
+											<legend> Mes radio boutons : </legend>
+											<label for="id_c1" > Texte a afficher pour la case 1  </label>
+											<br/>
+											<input type="checkbox" name="nom_variable[]" value="valeur 1" id="id_c1"/> 
+											<br/>
+											<label for="id_c2" > Texte a afficher pour la case 2  </label>
+											<br/>
+											<input type="checkbox" name="nom_variable[]" value="valeur 2" id="id_c2"/> 
+											<br/>
+											<label for="id_c3" > Texte a afficher pour la case 3  </label>
+											<br/>
+											<input type="checkbox" name="nom_variable[]" value="valeur 3" id="id_c3"/>
+										</fieldset>
 									</div>
-									<div class="border">
-										<label for="id_r1" > Texte du label pour r1 </label><br/>
-										<input type="radio" name="nom_variable" value="valeur 1" id="id_r1" checked />  <br/>
-										<label for="id_r2" > Texte du label pour r2</label><br/>
-										<input type="radio" name="nom_variable" value="valeur 2" id="id_r2"/>  
+									<br/>
+									<div>
+										<fieldset>
+											<legend> Mes boutons radios : </legend>
+											<label for="id_r1" > Texte du label pour r1 </label>
+											<br/>
+											<input type="radio" name="nom_variable" value="valeur 1" id="id_r1" checked /> 
+											<br/>
+											<label for="id_r2" > Texte du label pour r2</label>
+											<br/>
+											<input type="radio" name="nom_variable" value="valeur 2" id="id_r2"/>  
+										</fieldset>
 									</div>
-									<div class="border">
-										Menu défilant :<br/>
-										<select>
+									<br/>
+									<div>
+										<label for="id_s1" > Menu défilant :</label>
+										<br/>
+										<select id="id_s1">
 											<option name="nom_variable" value="valeur 1"> texte a afficher dans le menu 1 </option>
 											<option name="nom_variable" value="valeur 2"> texte a afficher dans le menu 2 </option>
 											<option name="nom_variable" value="valeur 3"> texte a afficher dans le menu 3 </option>
 											<option name="nom_variable" value="valeur 4"> texte a afficher dans le menu 4 </option>
 										</select>
 									</div>
-									<div class="border">
+									<br/>
+									<div>
 										<input type="submit" value="texte afficher dans le bouton"/>
 									</div>
+									<br/>
 								</form>
 							</div>
 						</div>

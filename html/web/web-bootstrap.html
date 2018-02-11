@@ -40,7 +40,7 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li><a href="web-html.html">HTML</a></li>
-							<li><a href="web-css.html">CSS</a></li>
+							<li><a href="https://devhints.io/css" target="blank">CSS</a></li>
 							<li><a href="web-php.html">PHP</a></li>
 							<li><a href="web-js.html">JS</a></li>
 							<li><a href="web-xml-xsl.html">XML et XSL</a></li>
@@ -95,6 +95,17 @@
 					<li>
 						<a href="../IA/IA.html"> Intelligence Artificielle </a>
 					</li>
+					<!-- Menu Bash -->
+					<li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown">
+							Bash
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="https://devhints.io/bash" target="blank">Bash</a></li>
+							<li><a href="../bash-scripts.html">Scripts utiles</a></li>
+						</ul>
+					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li>
@@ -136,20 +147,19 @@
 								sur ce site <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"> V4 </a> et <a href="https://getbootstrap.com/docs/3.3/css/" target="_blank"> V3 </a>.
 							</p>
 							
-							<h2>La Mise en place ?</h2>
+							<h2>La mise en place ?</h2>
 							
-							<ol>
-								<li> Par fichiers : </li>
-								<p>
-									Vous devez télécharger ces fichiers (<a href="https://getbootstrap.com/" target="_blank"> V4 </a> ou <a href="http://getbootstrap.com/docs/3.3/getting-started/#download target="_blank""> V3 </a> ) et les lier a votre page web a l'aide des balises link et script
-									comme vous le feriez avec des scripts JS et des documents CSS normaux.
-								</p>
-								
-								<li> Par liens : </li>
-								<p>
-									Il vous suffit de rajouter ceci dans votre balise head :
-								</p>
-								<pre><code class="html">&lt;head&gt;
+							<h3> Par fichiers : </h3>
+							<p>
+								Vous devez télécharger ces fichiers (<a href="https://getbootstrap.com/" target="_blank"> V4 </a> ou <a href="http://getbootstrap.com/docs/3.3/getting-started/#download target="_blank"> V3 </a> ) et les lier a votre page web a l'aide des balises link et script
+								comme vous le feriez avec des scripts JS et des documents CSS normaux.
+							</p>
+							
+							<h3> Par liens : </h3>
+							<p>
+								Il vous suffit de rajouter ceci dans votre balise head :
+							</p>
+							<pre><code class="html">&lt;head&gt;
 	&lt;!-- Déclatration des styles css et scripts js : --&gt; 
 	&lt;script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">&lt;/script&gt;
 	
@@ -162,7 +172,6 @@
 	&lt;!-- Votre page de style pour personnaliser les styles déjà rajoutés : --&gt; 
 	&lt;link rel="stylesheet" href="../../css/style.css"&gt;
 &lt;/head&gt; </code></pre>
-							</ol>
 						</div>
 					</div>
 					<div class="row">
