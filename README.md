@@ -1,6 +1,11 @@
 # BiblioCode
 
-Site regroupant des informations utiles pour des développeurs.
+Site de rappels sur différents sujets usuels très utiles pour les développeurs.
+
+### Technologies utilisées : 
+* HTML / CSS
+* Bootstrap V3
+* JS
 
 ### Sujets traités : 
 #### WEB
